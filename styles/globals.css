@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-margin-start: 0rem !important;
+  
+  margin-inline-start: 0rem !important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.select_country {
+  color: rgba(0,0,0,5);
+  font-weight: 500;
+  font-size: 15px;
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #F7F8F9;
+  outline: none;
+  padding-top: 10px;
+  border: 1px solid rgba(0,0,0,0.1);
+
+}
+
+
+.select_bill {
+  color: rgba(0,0,0,5);
+  font-weight: 500;
+  font-size: 15px;
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #F7F8F9;
+  outline: none;
+  padding-top: 10px;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.select_bill div {
+  border: none !important;
+  margin-top: -1px;
+  /* background-color: #F7F8F9 !important; */
+  
+}
+.select_country button {
+  border: none;
+  outline: none;
+}
+
+.select_country button span {
+  font-weight: 500 !important;
+  color: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    color: white;
+    background: black;
+    -webkit-margin-start: 0rem !important;
+    margin-inline-start: 0rem !important;
+  }
+}
