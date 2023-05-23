@@ -70,7 +70,7 @@ const SideBar = () => {
             }
             {
                 isLargerThan600 && !shrink && <HStack width='100%' justify='center' align='center'>
-                    <Image src='/images/img/logoimg.jpeg' style={{height: "50px", width: "50px"}} />
+                    <Image src='/images/img/logoo.png' style={{height: "50px", width: "50px"}} />
                 </HStack>
             }
 

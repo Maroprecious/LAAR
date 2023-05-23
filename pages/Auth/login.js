@@ -97,7 +97,7 @@ const Login = () => {
                 align='center'
                 justify='center'
             >
-                <Image src='/images/svg/logo.svg' />
+                <Image src='/images/img/logoo.png' style={{width: "50px", height: "50px"}}/>
                 <Text
                     color='#000'
                     fontSize='20px'
