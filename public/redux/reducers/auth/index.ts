@@ -2,11 +2,11 @@ import { createSlice } from "@reduxjs/toolkit";
 import {
   signUp,
   login,
- 
+
 } from "./thunkAction";
 
 interface IState {
-  user: object;
+  user: any;
   loading: "failed" | "pending" | "successful" | "idle";
   token: string;
   isChecking: "failed" | "pending" | "successful" | "idle";
@@ -56,7 +56,7 @@ const authSlice = createSlice({
   },
 
   extraReducers: (builder) => {
-  
+
 
     //signup
     builder.addCase(signUp.pending, (state) => {
@@ -77,7 +77,10 @@ const authSlice = createSlice({
     });
 
     builder.addCase(login.fulfilled, (state, action) => {
-      return { ...state, loading: "successful", user: action.payload };
+      return { 
+        ...state, 
+        loading: "successful",
+         user: action.payload };
     });
     builder.addCase(login.rejected, (state, action) => {
       console.log(action.payload);

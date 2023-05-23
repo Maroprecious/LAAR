@@ -6,7 +6,7 @@ import useAxios from "../../../hooks/UseAxios";
 
 export const signUp = createAsyncThunk(
   "auth/signup",
-  async (data: object, thunkAPI) => {
+  async (data, thunkAPI) => {
     try {
       const response = await useAxios({
         url: `${config.API_BASE_URL}/admin/sign-up`,
@@ -31,7 +31,7 @@ export const signUp = createAsyncThunk(
 
 export const login = createAsyncThunk(
   "auth/login",
-  async (data: object, thunkAPI) => {
+  async (data, thunkAPI) => {
     try {
       const response = await useAxios({
         url: `${config.API_BASE_URL}/admin/login`,
